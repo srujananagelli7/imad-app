@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var article_one= {
     title:'srujana',
-    heading:'article_one',
+    heading:'article-one',
     date:'sep 5,2016',
     content:`
      <p> 
@@ -58,7 +58,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article_one',function(req, res){
-   res.send(createTemplate(article_one));
+   res.send(createTemplate(article-one));
 });
 app.get('/article-two',function(req, res){
    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));

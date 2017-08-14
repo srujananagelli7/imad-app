@@ -17,7 +17,7 @@ var article_one= {
 };
 function createTemplate(data){
     var title=data.title;
-    var data=data.date;
+    var date=data.date;
     var heading=data.heading;
     var content=data.content;
   var htmlTemplate=`{

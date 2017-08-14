@@ -15,8 +15,8 @@ var article= {
     </p>,`
             
 };
-
-var htmlTemplate=`{
+function createTemplate(data){
+  var htmlTemplate=`{
 
     <html>
     <head>
@@ -47,7 +47,7 @@ var htmlTemplate=`{
     </body>
 </html>
 `;
-
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });

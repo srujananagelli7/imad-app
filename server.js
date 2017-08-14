@@ -16,7 +16,8 @@ var article= {
             
 };
 
-var htmlTemplate=`
+var htmlTemplate=`{
+
     <html>
     <head>
         <title>
@@ -37,15 +38,15 @@ var htmlTemplate=`
             article one
         </h3>
         <div>
-            aug 14th ,2017
+            aug 14th,2017
         </div>
-        <div>
+         <div>
             ${content}
-            </p>
-           </div>
+         </div>
         </div>
     </body>
 </html>
+`;
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));

@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article_one= {
+var articles= {
     title:'srujana',
     heading:'article-one',
     date:'sep 5,2016',
@@ -53,6 +53,8 @@ function createTemplate(data){
 `;
 return htmlTemplate;
 }
+
+function createTemplate(data){one}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
